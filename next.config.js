@@ -1,4 +1,3 @@
-require("./process.env.config.js").execute();
 const withImages = require("next-images");
 const withOptimizedImages = require("next-optimized-images");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");

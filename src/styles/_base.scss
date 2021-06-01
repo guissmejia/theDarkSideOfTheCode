@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $lato;
+}
+
+p {
+  font-family: $roboto;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 0;
+  @media screen and (max-width: $medium-screen-devices) {
+    max-width: 95% !important;
+    //padding-top: 4rem;
+  }
+}

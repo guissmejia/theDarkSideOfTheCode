@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  align-items: center;
+  .footer-by {
+    width: 60%;
+    p {
+      text-align: end;
+      color: white;
+      font-family: $lato;
+      font-size: 16px;
+      opacity: 0.3;
+    }
+  }
+  .footer-picture {
+    margin: 0;
+    width: 40%;
+    text-align: end;
+    img {
+      width: 180px;
+    }
+  }
+  @media screen and(max-width: $medium-screen-devices) {
+    flex-direction: column-reverse;
+    .footer-by {
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

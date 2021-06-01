@@ -1,0 +1,34 @@
+$firefly: #ffde3a;
+$sky: #00002d;
+
+body {
+  overflow: hidden;
+  background-color: $sky;
+  height: 100vh;
+  width: 100vw;
+}
+
+span {
+  position: absolute;
+  color: $firefly;
+
+  @for $dot from 1 through 100 {
+    @keyframes fly-#{$dot} {
+      100% {
+        transform: translate(random(100) * 2vw, random(100) * 1vh);
+        opacity: 0;
+      }
+    }
+    @keyframes shine-#{$dot} {
+      100% {
+        opacity: 0;
+      }
+    }
+    &:nth-child(#{$dot}) {
+      animation: fly-#{$dot} 40s infinite linear,
+        shine-#{$dot} 10s infinite linear;
+      animation-delay: -$dot * 0.2s; /* Retardo */
+      transform: translate(random(100) * 1vw, random(100) * 1vh);
+    }
+  }
+}
