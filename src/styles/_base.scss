@@ -10,19 +10,19 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $lato;
+  font-family: $roboto;
 }
 
-p {
-  font-family: $roboto;
+p,
+a {
+  font-family: $lato;
 }
 
 .container {
   max-width: 90%;
   margin: auto;
-  padding: 0;
+  padding: 85px 0 90px;
   @media screen and (max-width: $medium-screen-devices) {
     max-width: 95% !important;
-    //padding-top: 4rem;
   }
 }

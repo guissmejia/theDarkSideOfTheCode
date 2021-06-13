@@ -1,0 +1,22 @@
+.about {
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .about-image {
+      margin: 0;
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .about-detail {
+      width: 50%;
+      p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+}

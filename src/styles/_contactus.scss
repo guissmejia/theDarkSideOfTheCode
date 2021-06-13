@@ -1,0 +1,48 @@
+.contact {
+  &-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contact-image {
+      margin: 0;
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .contact-info {
+      width: 50%;
+      p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .social-links-list {
+        ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          li {
+            list-style: none;
+            margin: 0 1em;
+            a {
+              font-size: 40px;
+              svg {
+                color: #fff;
+                &:hover {
+                  color: #beb9b9;
+                  transform: scale(0.9);
+                  transition: all 0.5s ease;
+                }
+              }
+            }
+          }
+          li:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
